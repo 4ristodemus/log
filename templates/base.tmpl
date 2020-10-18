@@ -1,0 +1,17 @@
+{{ define "base" }}
+<html>
+  <head>
+    <title>{{ or .title "test" }}</title>
+  </head>
+  <body>
+    <header>
+      4ristodemus
+    </header>
+    <main>
+      {{ template "main" . }}
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
+{{ end }}

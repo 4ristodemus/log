@@ -8,8 +8,10 @@ sigint_handler()
 
 trap sigint_handler SIGINT
 
+go build
+
 while true; do
-  go build log.go
+  go build
   ./log &
   PID=$!
   inotifywait -r -e modify .

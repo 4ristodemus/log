@@ -1,8 +1,5 @@
-<html>
-  <head>
-    <title>{{ or .title "test" }}</title>
-  </head>
-  <body>
-    <h1>Index</h1>
-  </body>
-</html>
+{{ template "base" . }}
+
+{{ define "main" }}
+<h1>Home</h1>
+{{ end }}
