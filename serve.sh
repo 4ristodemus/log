@@ -11,6 +11,7 @@ trap sigint_handler SIGINT
 go build
 
 while true; do
+  clear
   go build
   ./log &
   PID=$!
