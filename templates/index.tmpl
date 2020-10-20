@@ -1,5 +1,21 @@
 {{ template "base" . }}
 
 {{ define "main" }}
-<h1>Home</h1>
+<div class="entries">
+  {{ range .entries }}
+    <article class="post">
+      <header>
+        <div class="post__title">
+          {{ .Title }}
+        </div>
+        <div class="post__timestamp">
+          {{ .CreatedAt | formatTimestamp }}
+        </div>
+      </header>
+      <div class="post__content">
+        {{ .Path | renderMarkdown }}
+      </div>
+    </article>
+  {{ end }}
+</div>
 {{ end }}

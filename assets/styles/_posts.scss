@@ -1,0 +1,19 @@
+.post {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    color: $color3;
+  }
+
+  &__timestamp {
+    font-size: 12px;
+    color: $color4;
+  }
+
+  margin-bottom: 3rem;
+}

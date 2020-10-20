@@ -12,8 +12,9 @@ go build
 
 while true; do
   clear
+  ./compile_assets.sh
   go build
-  ./log &
+  ./log serve &
   PID=$!
   inotifywait -r -e modify .
   kill $PID

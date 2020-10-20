@@ -1,0 +1,84 @@
+@font-face {
+  font-family: JuliaMono;
+  src: url("/static/fonts/JuliaMono-Regular.woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: JuliaMono;
+  src: url("/static/fonts/JuliaMono-Medium.woff2");
+  font-weight: medium;
+}
+@font-face {
+  font-family: JuliaMono;
+  src: url("/static/fonts/JuliaMono-Bold.woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: JuliaMono;
+  src: url("/static/fonts/JuliaMono-Light.woff2");
+  font-weight: Light;
+}
+body {
+  color: #cac5bc;
+  background: #1d1d1c;
+  font-family: JuliaMono, curie, monospace;
+  font-size: 12px;
+  padding: 5rem 2rem 2rem;
+}
+
+body > header {
+  background: #1d1d1c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+body > header .info {
+  display: flex;
+  align-items: center;
+}
+body > header .version {
+  color: #8A7482;
+}
+
+main {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  background-image: url("/static/images/icon.jpg");
+  background-size: 120%;
+  background-position: center;
+  margin-right: 12px;
+}
+
+.post {
+  margin-bottom: 3rem;
+}
+.post header {
+  display: flex;
+  justify-content: space-between;
+}
+.post__title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #8A7967;
+}
+.post__timestamp {
+  font-size: 12px;
+  color: #978976;
+}
+
+/*# sourceMappingURL=main.css.map */

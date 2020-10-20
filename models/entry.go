@@ -4,17 +4,21 @@ import (
 	"gorm.io/gorm"
 )
 
+type EntryType string
 type ActionType string
 
 const (
 	PostAction  ActionType = "write"
-	WatchAction            = "watch"
-	ReadAction             = "read"
+	WatchAction ActionType = "watch"
+	ReadAction  ActionType = "read"
+	PostEntry   EntryType  = "post"
 )
 
 type Entry struct {
 	gorm.Model
-	Type    ActionType
-	Title   string
-	Subject EntrySubject // Foreign id
+	Type      EntryType
+	Title     string
+	Path      string
+	SubjectID int
+	Subject   EntrySubject // Foreign id
 }

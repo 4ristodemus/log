@@ -2,10 +2,17 @@
 <html>
   <head>
     <title>{{ or .title "test" }}</title>
+    <link type="text/css" rel="stylesheet" href="/static/styles/main.css" />
   </head>
   <body>
     <header>
-      4ristodemus
+      <div class="info">
+        <div class="icon"></div>
+        4ristodemus
+      </div>
+      <div class="version">
+        v1.0.0
+      </div>
     </header>
     <main>
       {{ template "main" . }}

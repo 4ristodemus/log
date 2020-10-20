@@ -1,0 +1,47 @@
+body {
+  color: $foreground;
+  background: $background;
+  font-family: JuliaMono, curie, monospace;
+  font-size: 12px;
+  padding: (3rem + 2rem) 2rem 2rem;
+}
+
+body > header {
+  background: $background;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  .info {
+    display: flex;
+    align-items: center;
+  }
+
+  .version {
+    color: $color6;
+  }
+}
+
+main {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  background-image: url('/static/images/icon.jpg');
+  background-size: 120%;
+  background-position: center;
+  margin-right: 12px;
+}

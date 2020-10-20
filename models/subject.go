@@ -6,6 +6,7 @@ import (
 
 type EntrySubject struct {
 	gorm.Model
+	ID       int
 	Title    string
 	Metadata string
 }
